@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import Menu from "./menu"
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -11,6 +13,7 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
+        display: `flex`,
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
@@ -26,7 +29,15 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
+        <p style={{
+          fontSize: `16px`,
+          paddingTop: `10px`
+        }}>
+          Software Engineer / Linguist
+        </p>
       </h1>
+
+      <Menu></Menu>
     </div>
   </header>
 )

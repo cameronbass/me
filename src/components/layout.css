@@ -41,12 +41,15 @@ template {
   display: none;
 }
 a {
+  text-decoration: none;
+  color: #4c4c4c;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  color: #7ecdd3;
 }
 abbr[title] {
   border-bottom: none;
@@ -200,7 +203,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: #4c4c4c;
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -211,6 +214,7 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 img {
+  border-radius: 50%;
   max-width: 100%;
   margin-left: 0;
   margin-right: 0;
