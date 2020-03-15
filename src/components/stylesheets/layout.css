@@ -33,6 +33,9 @@ audio:not([controls]) {
   display: none;
   height: 0;
 }
+main {
+  min-height: 500px;
+}
 progress {
   vertical-align: baseline;
 }
@@ -629,5 +632,10 @@ pre tt:after {
 @media only screen and (max-width: 1000px) {
   main {
     display: block;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 24px;
   }
 }
