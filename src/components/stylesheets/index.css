@@ -38,4 +38,8 @@ main {
   .greeting {
     font-size: 40px;
   }
+
+  .content-container {
+    margin: 0px 25px;
+  }
 }

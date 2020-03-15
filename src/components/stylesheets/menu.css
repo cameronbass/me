@@ -1,0 +1,13 @@
+.menu-container {
+  padding-top: 35px;
+}
+
+.menu-list {
+  padding-left: 35px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu-list {
+    padding: 0px 15px;
+  }
+}
