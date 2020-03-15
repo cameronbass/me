@@ -20,7 +20,7 @@ const IndexPage = () => (
       <h1 style={{
         fontSize: `78px`
       }}>
-       Bonjour,
+       Hello,
       </h1>
       <p style={{
         fontSize: `34px`,
