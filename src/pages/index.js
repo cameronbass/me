@@ -4,31 +4,17 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import "../components/stylesheets/index.css"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div style={{
-      maxWidth: `300px`,
-      marginBottom: `1.45rem`,
-      minWidth: `300px`
-    }}>
+    <div class="image-container">
       <Image />
     </div>
-    <div style={{
-      marginLeft: `50px`
-    }}>
-      <h1 style={{
-        fontSize: `78px`
-      }}>
-       Hello,
-      </h1>
-      <p style={{
-        fontSize: `34px`,
-        paddingTop: `10px`,
-        paddingBottom: `10px`
-      }}>
-        Allow me to introduce myself:
-      </p>
+    <div class="content-container">
+      <h1 class="greeting">Bonjour,</h1>
+      <p class="sub-greeting"> Allow me to introduce myself: </p>
       <p>
         I'm baby tofu tacos hammock pour-over, kinfolk lumbersexual asymmetrical banh mi literally street art tbh tousled raclette air plant. Mumblecore everyday carry chambray trust fund austin, venmo bushwick chicharrones vice. Deep v photo booth lomo pork belly next level hexagon fanny pack fixie cronut letterpress skateboard kitsch intelligentsia. Umami echo park mumblecore, polaroid hexagon asymmetrical stumptown fam.
       </p>

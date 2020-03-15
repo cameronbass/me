@@ -1,0 +1,32 @@
+header {
+  background: #eae5e5;
+  margin-bottom: 1.45rem;
+}
+
+h1 {
+  margin: 0px;
+}
+
+a {
+  color: #4c4c4c;
+  text-decoration: none;
+}
+
+.sub-heading {
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+.header-container {
+  display: flex;
+  margin: 0px auto;
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .header-container {
+    display: block;
+    text-align: center;
+  }
+}
