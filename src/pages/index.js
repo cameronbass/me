@@ -2,23 +2,23 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import "../components/stylesheets/index.css"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <div class="image-container">
+    <Seo title="Home" />
+    <div className="image-container">
       <Image />
     </div>
-    <div class="content-container">
-      <h1 class="greeting">Bonjour,</h1>
-      <p class="sub-greeting"> Allow me to introduce myself: </p>
-      <div class="separator-container">
-        <div class="separator left"></div>
-        <div class="separator center"></div>
-        <div class="separator right"></div>
+    <div className="content-container">
+      <h1 className="greeting">Bonjour,</h1>
+      <p className="sub-greeting"> Allow me to introduce myself: </p>
+      <div className="separator-container">
+        <div className="separator left"></div>
+        <div className="separator center"></div>
+        <div className="separator right"></div>
       </div>
       <p>
         Placeholder Text

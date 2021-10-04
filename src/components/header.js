@@ -6,10 +6,10 @@ import "./stylesheets/header.css"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div class="header-container">
+    <div className="header-container">
       <h1>
         {siteTitle}
-        <p class="sub-heading">
+        <p className="sub-heading">
           Software Engineer / Linguist
         </p>
       </h1>
