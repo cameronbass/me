@@ -1,9 +1,10 @@
 import React from 'react'
 import Layout from "../components/layout"
+import Timeline from "../components/timeline"
 
 const Journey = () => (
   <Layout>
-    <h1>No Content: Coming Soon</h1>
+    <Timeline />
   </Layout>
 )
 
