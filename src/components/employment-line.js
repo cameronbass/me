@@ -14,7 +14,12 @@ export default function EmploymentLine(props) {
         style={{height: parseDate(props), backgroundColor: props.backgroundColor}}>
       </div>
 
-      <div className="employment-line-name">{props.name}</div>
+      <div 
+        className="employment-line-name"
+        style={{textDecorationColor: props.backgroundColor}}
+      >
+        {props.name}
+      </div>
 
       <Modal onClose={ () => setShow(false) } place={props.name} show={show} />
     </div>

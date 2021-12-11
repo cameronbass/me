@@ -1,0 +1,30 @@
+.post-item-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 15px 20px;
+  margin: 20px 0;
+}
+
+.post-item-title {
+  margin-bottom: 10px;
+}
+
+.post-item-divider {
+  height: 1px !important;
+  width: auto;
+  background-color: red;
+}
+
+.post-item-date {
+  display: flex;
+}
+
+.post-item-content {
+  margin: inherit;
+  padding-top: 8px;
+}
