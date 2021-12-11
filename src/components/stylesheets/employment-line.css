@@ -1,7 +1,3 @@
-.employment-line-name {
-  color: red;
-}
-
 .container {
   display: flex;
   height: 500px;
@@ -11,9 +7,7 @@
   align-items: center;
 }
 
-.square1 {
-  width: 4px;
+.employment-line-element {
   height: 4px;
-  background-color: blue;
   margin: 10px;
 }

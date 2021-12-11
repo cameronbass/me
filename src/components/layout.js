@@ -40,7 +40,9 @@ const Layout = ({ children }) => {
           <div className="image-container">
             <Image />
           </div>
-          {children}
+          <div className="children-container">
+            {children}
+          </div>
         </main>
         <footer>
         </footer>
