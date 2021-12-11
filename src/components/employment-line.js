@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from "../components/modal"
 
 import "./stylesheets/employment-line.css"
 
-const EmploymentLine = (props) => (
-  <div className="employment-line-container">
-    <div className="employment-line-name">{props.name}</div>
-    <div>Days at {props.name}: {parseDate(props)}</div>
-    <div className="square2" style={{height: parseDate(props)}}></div>
-  </div>
-)
+export default function EmploymentLine(props) {
+  const [show, setShow] = useState(false);
+
+  return (
+    <div className="employment-line-container">
+      <div className="employment-line-name">{props.name}</div>
+      <div onClick={ () => setShow(true) } className="square1" style={{width: parseDate(props)}}></div>
+      <Modal onClose={ () => setShow(false) } place={props.name} show={show} />
+    </div>
+  )
+}
 
 function parseDate(props) {
   var startDate = new Date(props.startDate)
@@ -19,5 +24,3 @@ function parseDate(props) {
 
   return parseInt(diffInDays/ 8)
 }
-
-export default EmploymentLine

@@ -1,7 +1,6 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import Seo from "../components/seo"
 
 import "../components/stylesheets/index.css"
@@ -9,9 +8,6 @@ import "../components/stylesheets/index.css"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <div className="image-container">
-      <Image />
-    </div>
     <div className="content-container">
       <h1 className="greeting">Bonjour,</h1>
       <p className="sub-greeting"> Allow me to introduce myself: </p>

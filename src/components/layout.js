@@ -9,8 +9,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import Image from "../components/image"
 import Header from "./header"
 import "./stylesheets/layout.css"
+
+import "../components/stylesheets/index.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -33,7 +36,12 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
+        <main>
+          <div className="image-container">
+            <Image />
+          </div>
+          {children}
+        </main>
         <footer>
         </footer>
       </div>

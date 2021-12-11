@@ -13,12 +13,7 @@
 
 .square1 {
   width: 4px;
+  height: 4px;
   background-color: blue;
-  margin: 10px;
-}
-
-.square2 {
-  width: 4px;
-  background-color: green;
   margin: 10px;
 }
