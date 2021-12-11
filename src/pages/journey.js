@@ -4,7 +4,6 @@ import Timeline from "../components/timeline"
 
 const Journey = () => (
   <Layout>
-    <Timeline />
   </Layout>
 )
 

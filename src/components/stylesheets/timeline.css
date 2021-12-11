@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  height: 500px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.square1 {
+  width: 4px;
+  background-color: blue;
+  margin: 10px;
+}
+
+.square2 {
+  width: 4px;
+  background-color: green;
+  margin: 10px;
+}
