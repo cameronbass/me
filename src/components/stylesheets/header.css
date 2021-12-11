@@ -21,7 +21,7 @@ a {
   display: flex;
   margin: 0px auto;
   max-width: 960px;
-  padding: 1.45rem 1.0875rem;
+  padding: 1.45rem 1.0875rem 0;
 }
 
 @media only screen and (max-width: 1000px) {

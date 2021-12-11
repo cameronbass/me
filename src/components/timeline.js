@@ -12,10 +12,10 @@ const Timeline = () => (
     <div className='timeline-employment-line-container'>
       <div>
         <EmploymentLine 
-          name="Collective Idea" 
-          startDate="01/03/2016" 
-          endDate="01/03/2022" 
-          backgroundColor="#d64859"
+          name="Blackhawk Network" 
+          startDate="11/03/2020" 
+          endDate="12/24/2021"
+          backgroundColor="#d0c74b"
         />
       </div>
       <div>
@@ -28,10 +28,10 @@ const Timeline = () => (
       </div>
       <div>
         <EmploymentLine 
-          name="Blackhawk Network" 
-          startDate="11/03/2020" 
-          endDate="12/24/2021"
-          backgroundColor="#d0c74b"
+          name="Collective Idea" 
+          startDate="01/03/2016" 
+          endDate="01/03/2022" 
+          backgroundColor="#d64859"
         />
       </div>
     </div>
