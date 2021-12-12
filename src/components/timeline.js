@@ -9,6 +9,8 @@ const Timeline = () => (
       <h1 className="timeline-heading">Experience</h1>
     </div>
 
+    <div className='timeline-legacy'>
+    </div>
     <div className='timeline-employment-line-container'>
       <div>
         <EmploymentLine 
