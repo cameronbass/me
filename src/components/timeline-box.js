@@ -1,23 +1,21 @@
-import React, { useState } from 'react'
-import Modal from "../components/modal"
-import collectiveIdea from "../images/logo-vertical.svg"
+import React from 'react'
 
 import "./stylesheets/timeline.css"
 
 export default function TimelineBox(props) {
   return(
-    <div className="timeline-container__timeline__box">
+    <div className="timeline-container__timeline__box" style={{ top: props.top }}>
       <div className="timeline-container__timeline__box__logo-background">
-        <img className="profile" src={collectiveIdea} alt="React Logo" />
+        <img style={{ marginTop: props.imageMargin }}className="profile" src={props.image} alt="React Logo" />
       </div>
 
       <div className="timeline-container__timeline__box__company">
         <div className="timeline-container__timeline__box__name">
-          Collective Idea
+          {props.name}
         </div>
 
         <div className="timeline-container__timeline__box__title">
-          Software Engineer
+          {props.title}
         </div>
       </div>
     </div>

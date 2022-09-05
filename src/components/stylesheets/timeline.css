@@ -51,11 +51,17 @@
 
 .timeline-container__timeline__box__name {
   border-bottom: 1px solid #4c4c4c;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .timeline-container__timeline__box__title {
   font-size: 16px;
   color: rgb(131, 129, 129);
+}
+
+.timeline-container__timeline__date {
+  margin-right: 1rem;
+  position: relative;
+  top: 10%;
 }
 
