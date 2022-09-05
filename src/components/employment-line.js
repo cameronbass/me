@@ -33,5 +33,5 @@ function parseDate(props) {
   var diffInTime = endDate.getTime() - startDate.getTime();
   var diffInDays = diffInTime / (1000 * 3600 * 24);
 
-  return parseInt(diffInDays/ 8)
+  return parseInt(diffInDays / 8)
 }
