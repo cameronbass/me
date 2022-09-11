@@ -1,6 +1,7 @@
 .timeline-container {
   display: flex;
   height: 30rem;
+  padding-top: 30px;
 }
 
 .timeline-container__timeline {
@@ -38,9 +39,6 @@
   box-shadow: rgba(136, 165, 191, 0.20) 6px 2px 16px 0px, rgba(255, 255, 255, 0.2) -6px -2px 16px 0px;
 }
 
-.timeline-container__timeline__box__logo-background {
-}
-
 .timeline-container__timeline__box__company {
   width: 100%;
   margin-left: 10px;
@@ -63,5 +61,27 @@
   margin-right: 1rem;
   position: relative;
   top: 10%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .timeline-container {
+    justify-content: center;
+  }
+
+  .timeline-container__date {
+    display: none;
+  }
+
+  .timeline-container__timeline {
+    display: none;
+  }
+
+  .timeline-container__timelines {
+    display: none;
+  }
+
+  .timeline-container__timeline__box {
+    width: auto;
+  }
 }
 

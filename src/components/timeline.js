@@ -13,7 +13,7 @@ import "./stylesheets/timeline.css"
 
 const Timeline = () => (
   <div className="timeline-container">
-    <div>
+    <div className="timeline-container__date">
       <TimelineDate date="Present" top="2%" />
       <TimelineDate date="2021" top="24%"/>
       <TimelineDate date="2020" top="49%"/>
@@ -22,7 +22,7 @@ const Timeline = () => (
 
     <div className="timeline-container__timeline"></div>
 
-    <div>
+    <div className="timeline-container__timelines">
       <TimelineLine top="88%" />
       <TimelineLine top="60%" />
       <TimelineLine top="30%" />
