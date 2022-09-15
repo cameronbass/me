@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "./stylesheets/timeline.css"
+import "../stylesheets/timelines/timeline.css"
 
 export default function TimelineDate(props) {
   return(

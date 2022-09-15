@@ -1,15 +1,15 @@
 import React from 'react'
 
-import TimelineBox from "../components/timeline-box"
-import TimelineLine from "../components/timeline-line"
-import TimelineDate from "../components/timeline-date"
+import TimelineBox from "./timeline-box"
+import TimelineLine from "./timeline-line"
+import TimelineDate from './timeline-date'
 
-import CollectiveIdea from "../images/logo-vertical.svg"
-import NGC from "../images/ngc-logo-bh.svg"
-import Blackhawk from "../images/blackhawk.svg"
-import AdvisoryAlpha from "../images/advisory-alpha.png"
+import CollectiveIdea from '../../images/logo-vertical.svg'
+import NGC from "../../images/ngc-logo-bh.svg"
+import Blackhawk from "../../images/blackhawk.svg"
+import AdvisoryAlpha from "../../images/advisory-alpha.png"
 
-import "./stylesheets/timeline.css"
+import "../../components/stylesheets/timelines/timeline.css"
 
 const Timeline = () => (
   <div className="timeline-container">
