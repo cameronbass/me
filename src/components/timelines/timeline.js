@@ -14,10 +14,10 @@ import "../../components/stylesheets/timelines/timeline.css"
 const Timeline = () => (
   <div className="timeline-container">
     <div className="timeline-container__date">
-      <TimelineDate date="Present" top="2%" />
-      <TimelineDate date="2021" top="24%"/>
-      <TimelineDate date="2020" top="49%"/>
-      <TimelineDate date="2016" top="71%"/>
+      <TimelineDate date="Jan '22 - Present" top="2%" />
+      <TimelineDate date="2021 - 2022" top="24%"/>
+      <TimelineDate date="2020 - 2021" top="49%"/>
+      <TimelineDate date="2016 - 2020" top="71%"/>
     </div>
 
     <div className="timeline-container__timeline"></div>
@@ -30,34 +30,38 @@ const Timeline = () => (
     </div>
     <div>
       <TimelineBox 
-        name="Collective Idea" 
+        name="Advisory Alpha" 
         title="Software Engineer"
-        top="80%"
-        image={CollectiveIdea}
-        imageMargin="0px"
-      />
-
-      <TimelineBox 
-        name="National Gift Card" 
-        title="Software Engineer"
-        top="35%"
-        image={NGC}
+        timeline="Jan '22 - Present"
+        top="-20px"
+        image={AdvisoryAlpha}
         imageMargin="0px"
       />
 
       <TimelineBox 
         name="Blackhawk Network" 
         title="Software Engineer"
-        top="-10%"
+        timeline="2021 - 2022"
+        top="25px"
         image={Blackhawk}
         imageMargin="0px"
       />
 
       <TimelineBox 
-        name="Advisory Alpha" 
+        name="National Gift Card" 
         title="Software Engineer"
-        top="-54%"
-        image={AdvisoryAlpha}
+        timeline="2020 - 2021"
+        top="85px"
+        image={NGC}
+        imageMargin="0px"
+      />
+
+      <TimelineBox 
+        name="Collective Idea" 
+        title="Software Engineer"
+        timeline="2016 - 2020"
+        top="135px"
+        image={CollectiveIdea}
         imageMargin="0px"
       />
     </div>

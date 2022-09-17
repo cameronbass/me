@@ -20,10 +20,16 @@
   top: 85%;
 }
 
+.timeline-container__timeline__box__container {
+  position: relative;
+}
+
+.timeline-container__timeline__box__dates {
+  display: none;
+}
+
 .timeline-container__timeline__box {
   display: flex;
-  position: relative;
-  top: 77%;
   height: 5rem;
   width: 15rem; 
   background-color: #fff;
@@ -90,9 +96,21 @@
   img.profile {
     margin-top: 10px;
     max-height: 85%;
-    /* margin: auto; */
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .timeline-container__timeline__box__container {
+    position: inherit;
+    padding-bottom: 24px;
+  }
+
+  .timeline-container__timeline__box__dates {
+    display: block;
+  }
+
+  .timeline-container {
+    padding-top: 0px;
   }
 }
 

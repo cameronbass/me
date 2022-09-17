@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
       <h1>
         {siteTitle}
         <p className="sub-heading">
-          Software Engineer / Hobbyist
+          Software Engineer / Curiosity
         </p>
       </h1>
 

@@ -7,6 +7,10 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .menu-container {
+    padding-top: 0px
+  }
+
   .menu-list {
     padding: 0px 15px;
   }
