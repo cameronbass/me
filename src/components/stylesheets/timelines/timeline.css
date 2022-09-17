@@ -32,8 +32,11 @@
 }
 
 .timeline-container__timeline__box__logo-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  width: 45%; 
+  width: 50%; 
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   box-shadow: rgba(136, 165, 191, 0.20) 6px 2px 16px 0px, rgba(255, 255, 255, 0.2) -6px -2px 16px 0px;
@@ -82,6 +85,14 @@
 
   .timeline-container__timeline__box {
     width: auto;
+  }
+
+  img.profile {
+    margin-top: 10px;
+    max-height: 85%;
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

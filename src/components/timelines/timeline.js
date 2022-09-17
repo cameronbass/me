@@ -5,9 +5,9 @@ import TimelineLine from "./timeline-line"
 import TimelineDate from './timeline-date'
 
 import CollectiveIdea from '../../images/logo-vertical.svg'
-import NGC from "../../images/ngc-logo-bh.svg"
+import NGC from "../../images/ngc.svg"
 import Blackhawk from "../../images/blackhawk.svg"
-import AdvisoryAlpha from "../../images/advisory-alpha.png"
+import AdvisoryAlpha from "../../images/advisory.svg"
 
 import "../../components/stylesheets/timelines/timeline.css"
 
@@ -34,7 +34,7 @@ const Timeline = () => (
         title="Software Engineer"
         top="80%"
         image={CollectiveIdea}
-        imageMargin="20px"
+        imageMargin="0px"
       />
 
       <TimelineBox 
@@ -42,7 +42,7 @@ const Timeline = () => (
         title="Software Engineer"
         top="35%"
         image={NGC}
-        imageMargin="30px"
+        imageMargin="0px"
       />
 
       <TimelineBox 
@@ -50,7 +50,7 @@ const Timeline = () => (
         title="Software Engineer"
         top="-10%"
         image={Blackhawk}
-        imageMargin="40px"
+        imageMargin="0px"
       />
 
       <TimelineBox 
@@ -58,7 +58,7 @@ const Timeline = () => (
         title="Software Engineer"
         top="-54%"
         image={AdvisoryAlpha}
-        imageMargin="10px"
+        imageMargin="0px"
       />
     </div>
   </div>
