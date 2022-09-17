@@ -5,8 +5,10 @@ import Timeline from "../components/timelines/timeline"
 export default function Journey() {
   return (
     <Layout>
+      <div className="timeline-heading-container">
+        <h2 className="timeline-heading">Experience</h2>
+      </div>
       <Timeline />
     </Layout>
   );
 }
-

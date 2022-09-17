@@ -9,8 +9,7 @@ export default function PostItem(props) {
         {props.title}
       </div>
       <div className='post-item-date'>
-        <p className='post-item-content'><i>{props.date}</i> -</p>
-        <p className='post-item-content'>&nbsp;<i>Cam Bass</i></p>
+        <p className='post-item-content'><i>{props.date}</i></p>
       </div>
     </div>
   )

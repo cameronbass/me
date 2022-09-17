@@ -639,7 +639,8 @@ pre tt:after {
     display: block;
   }
 
-  h1 {
+  h1,
+  h2 {
     font-size: 24px;
     text-align: center;
   }
