@@ -10,13 +10,15 @@ const Posts = () => (
     </div>
 
     <PostItem 
-      title='Adding a Simple Modal With Gatsby.js'
-      date='September 21, 2020'
+      title='Adjustable Form Text Area with the contenteditable Tag'
+      date='June 13, 2017'
+      url='https://collectiveidea.com/blog/archives/2017/06/13/adjustable-form-text-area-with-the-contenteditable-tag'
     />
 
     <PostItem 
-      title='Adventures In Creating Your Own Microservice' 
-      date='August 10, 2019'
+      title='Efficient Learning for New Programmers' 
+      date='July 06, 2016'
+      url='https://collectiveidea.harmonycms.com/blog/archives/2016/07/06/efficient-learning-for-new-programmers'
     />
   </Layout>
 )
