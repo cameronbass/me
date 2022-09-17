@@ -8,10 +8,12 @@ const Posts = () => (
     <div className="timeline-heading-container">
       <h1 className="timeline-heading">Entries</h1>
     </div>
+
     <PostItem 
       title='Adding a Simple Modal With Gatsby.js'
       date='September 21, 2020'
     />
+
     <PostItem 
       title='Adventures In Creating Your Own Microservice' 
       date='August 10, 2019'
