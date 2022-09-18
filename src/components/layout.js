@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Image from "../components/image"
-import Linkedin from "../../src/images/Linkedin.svg"
+import Linkedin from "../../src/images/linkedin.svg"
 import Email from "../../src/images/email.svg"
 import Twitter from "../../src/images/twitter.svg"
 import Header from "./header"
@@ -40,33 +40,35 @@ const Layout = ({ children }) => {
         }}
       >
         <main>
-          <div className="image-container">
-            <Image />
-            <div style={{ textAlign: 'center', paddingTop: '20px', display: 'flex', justifyContent: 'space-evenly'}}>
-              <a href="https://www.linkedin.com/in/cameron-michael-bass/">
-                <img
-                  style={{height: '44px', width: '44px', cursor: 'pointer'}}
-                  className="profile"
-                  src={Email}
-                />
-              </a>
-              <a href="https://www.linkedin.com/in/cameron-michael-bass/">
-                <img
-                  style={{height: '44px', width: '44px', cursor: 'pointer'}}
-                  className="profile"
-                  src={Twitter}
-                />
-              </a>
-              <a 
-                href="https://www.linkedin.com/in/cameron-michael-bass/"
-                className="twitter-icon"
-              >
-                <img
-                  style={{height: '40px', width: '40px', cursor: 'pointer'}}
-                  className=""
-                  src={Linkedin}
-                />
-              </a>
+          <div>
+            <div className="image-container">
+              <Image />
+              <div style={{ textAlign: 'center', paddingTop: '20px', display: 'flex', justifyContent: 'space-evenly'}}>
+                <a href onClick={() => window.location = 'mailto:cam@statcasters.com'}>
+                  <img
+                    style={{height: '44px', width: '44px', cursor: 'pointer'}}
+                    className="profile"
+                    src={Email}
+                  />
+                </a>
+                <a href="https://twitter.com/cameronmbass?lang=en" target={'_blank'}>
+                  <img
+                    style={{height: '44px', width: '44px', cursor: 'pointer'}}
+                    className="profile"
+                    src={Twitter}
+                  />
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/cameron-michael-bass/" target={'_blank'}
+                  className="twitter-icon"
+                >
+                  <img
+                    style={{height: '40px', width: '40px', cursor: 'pointer'}}
+                    className=""
+                    src={Linkedin}
+                  />
+                </a>
+              </div>
             </div>
           </div>
           <div className="children-container">
