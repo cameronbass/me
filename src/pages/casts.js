@@ -6,6 +6,9 @@ import "../components/stylesheets/casts.css"
 const Casts = () => (
   <Layout>
     <div className="timeline-heading-container">
+      <div className="timeline-heading-brand timeline-heading-red"></div>
+      <div className="timeline-heading-brand timeline-heading-blue"></div>
+      <div className="timeline-heading-brand timeline-heading-yellow"></div>
       <h2 className="timeline-heading">Episodes</h2>
     </div>
 

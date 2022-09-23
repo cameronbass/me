@@ -4,6 +4,34 @@
   padding-top: 30px;
 }
 
+.timeline-heading-container {
+  display: flex;
+  height: 33px;
+}
+
+.timeline-heading {
+  padding-left: 5px;
+}
+
+.timeline-heading-brand {
+  width: 10px;
+  margin: 0px 4px;
+  border-radius: 15px;
+}
+
+.timeline-heading-red {
+  background-color: #d64859;
+}
+
+.timeline-heading-blue {
+  background-color: #7ecdd3;
+}
+
+.timeline-heading-yellow {
+  background-color: #d0c74b;
+}
+
+
 .timeline-container__timeline {
   background-color: #4c4c4c;
   height: 100%;
@@ -96,6 +124,16 @@
 
   .timeline-container__timeline__box {
     width: auto;
+  }
+
+  .timeline-heading-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .timeline-heading {
+    padding-top: 3px;
   }
 
   img.profile {

@@ -6,6 +6,9 @@ import PostItem from "../components/post-item"
 const Posts = () => (
   <Layout>
     <div className="timeline-heading-container">
+      <div className="timeline-heading-brand timeline-heading-red"></div>
+      <div className="timeline-heading-brand timeline-heading-blue"></div>
+      <div className="timeline-heading-brand timeline-heading-yellow"></div>
       <h2 className="timeline-heading">Entries</h2>
     </div>
 

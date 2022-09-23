@@ -6,6 +6,9 @@ export default function Journey() {
   return (
     <Layout>
       <div className="timeline-heading-container">
+        <div className="timeline-heading-brand timeline-heading-red"></div>
+        <div className="timeline-heading-brand timeline-heading-blue"></div>
+        <div className="timeline-heading-brand timeline-heading-yellow"></div>
         <h2 className="timeline-heading">Experience</h2>
       </div>
       <Timeline />

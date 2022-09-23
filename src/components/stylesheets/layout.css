@@ -228,6 +228,13 @@ img {
   padding-top: 0;
 }
 
+.gatsby-image-wrapper {
+  margin-top: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 img.profile {
   border-radius: 0%;
   display: flex;
@@ -628,6 +635,7 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
