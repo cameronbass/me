@@ -228,6 +228,10 @@ img {
   padding-top: 0;
 }
 
+.svg {
+  fill: #4c4c4c;
+}
+
 .gatsby-image-wrapper {
   margin-top: 20px;
   width: 80%;
@@ -651,9 +655,5 @@ pre tt:after {
   h2 {
     font-size: 24px;
     text-align: center;
-  }
-
-  .twitter-icon {
-    padding-top: 11px;
   }
 }
