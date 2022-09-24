@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1000px) {
+  .posts-container {
+    width: 385px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .posts-container {
+    width: 100%;
+    margin: auto;
+  }
+}
