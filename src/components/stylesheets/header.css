@@ -24,6 +24,24 @@ a {
   padding: 1.45rem 1.0875rem 0;
 }
 
+.timeline-heading-brand {
+  width: 10px;
+  margin: 0px 4px;
+  border-radius: 15px;
+}
+
+.timeline-heading-red {
+  background-color: #d64859;
+}
+
+.timeline-heading-blue {
+  background-color: #7ecdd3;
+}
+
+.timeline-heading-yellow {
+  background-color: #d0c74b;
+}
+
 @media only screen and (max-width: 1000px) {
   .header-container {
     display: block;

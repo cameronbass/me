@@ -7,8 +7,12 @@ import "./stylesheets/header.css"
 const Header = ({ siteTitle }) => (
   <header>
     <div className="header-container">
+      <div className="timeline-heading-brand timeline-heading-red" style={{height: '80px'}}></div>
+      <div className="timeline-heading-brand timeline-heading-blue" style={{height: '80px'}}></div>
+      <div className="timeline-heading-brand timeline-heading-yellow" style={{height: '80px', marginRight: '10px'}}></div>
       <h1>
         {siteTitle}
+
         <p className="sub-heading">
           Software Engineer / Curiosity
         </p>

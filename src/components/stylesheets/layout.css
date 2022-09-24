@@ -232,6 +232,18 @@ img {
   fill: #4c4c4c;
 }
 
+.svg.linkedin {
+  fill: #2D64BC;
+}
+
+.svg.twitter {
+  fill: #4A99E9;
+}
+
+.svg.email {
+  fill: #B5342A;
+}
+
 .gatsby-image-wrapper {
   margin-top: 20px;
   width: 80%;

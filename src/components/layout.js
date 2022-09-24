@@ -13,6 +13,7 @@ import SVG, { Props as SVGProps } from 'react-inlinesvg'
 import Image from "../components/image"
 import Linkedin from "../../src/images/linkedin.svg"
 import Email from "../../src/images/email.svg"
+import Gmail from "../../src/images/gmail.svg"
 import Twitter from "../../src/images/twitter.svg"
 import Header from "./header"
 import "./stylesheets/layout.css"
@@ -46,22 +47,21 @@ const Layout = ({ children }) => {
               <Image />
               <div style={{ textAlign: 'center', paddingTop: '20px', display: 'flex', justifyContent: 'space-evenly'}}>
                 <a href onClick={() => window.location = 'mailto:cam@statcasters.com'}>
-                  <SVG className="svg" src={Email} width={44} height={44}  />
+                  <SVG className="svg" src={Gmail} width={32} height={32}  />
                 </a>
                 <a href="https://twitter.com/cameronmbass?lang=en" target={'_blank'}>
                   <SVG 
                     src={Twitter} 
-                    className="svg"
-                    width={44} 
-                    height={44}  
-                    preProcessor={(code) => code.replace(/fill=".*?"/g, 'fill="#4c4c4c"')}
+                    className="svg twitter"
+                    width={32} 
+                    height={32}  
                   />
                 </a>
                 <a 
                   href="https://www.linkedin.com/in/cameron-michael-bass/" target={'_blank'}
                   className="twitter-icon"
                 >
-                  <SVG className="svg" src={Linkedin} width={44} height={44}  />
+                  <SVG className="svg linkedin" src={Linkedin} width={32} height={32}  />
                 </a>
               </div>
             </div>

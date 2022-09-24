@@ -13,7 +13,7 @@ const Casts = () => (
     </div>
 
     <div className="casts-container">
-      <h4>No Content: Coming Soon</h4>
+      <h4>No Content: In Progress</h4>
     </div>
   </Layout>
 )
