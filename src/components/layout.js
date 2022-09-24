@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
             <div className="image-container">
               <Image />
               <div style={{ textAlign: 'center', paddingTop: '20px', display: 'flex', justifyContent: 'space-evenly'}}>
-                <a href onClick={() => window.location = 'mailto:cam@statcasters.com'}>
+                <a href onClick={() => window.location = 'mailto:cam@statcasters.com'} target={'_blank'}>
                   <SVG className="svg" src={Gmail} width={32} height={32}  />
                 </a>
                 <a href="https://twitter.com/cameronmbass?lang=en" target={'_blank'}>
