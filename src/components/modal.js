@@ -1,4 +1,6 @@
 import React from 'react'
+import SVG from 'react-inlinesvg'
+import Close from '../images/close.svg'
 import "./stylesheets/modal.css"
 
 const Modal = (props) => {
@@ -11,12 +13,18 @@ const Modal = (props) => {
       <div className="modal-content" onClick={e => e.stopPropagation()}>
         <div className="modal-header">
           <h4 className='modal-title'>The {props.place} Experience</h4>
+          <SVG onClick={props.onClose} className="svg" src={Close} width={12} height={12}  />
         </div>
         <div className='modal-body'>
-          this is the modal body 
-        </div>
-        <div className='modal-footer'>
-          <button onClick={props.onClose} className="button">Close</button>
+          <SVG 
+            src={props.svg} 
+            className="svg"
+            style={{width: '100%', marginBottom: '10px'}}
+            width={120} 
+            height={120}  
+          />
+
+          {props.text}
         </div>
       </div>
     </div>

@@ -8,11 +8,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import SVG, { Props as SVGProps } from 'react-inlinesvg'
+import SVG from 'react-inlinesvg'
 
 import Image from "../components/image"
 import Linkedin from "../../src/images/linkedin.svg"
-import Email from "../../src/images/email.svg"
 import Gmail from "../../src/images/gmail.svg"
 import Twitter from "../../src/images/twitter.svg"
 import Header from "./header"
@@ -37,7 +36,7 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: 1000,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >

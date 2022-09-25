@@ -6,12 +6,18 @@ import TimelineDate from './timeline-date'
 
 import CollectiveIdea from '../../images/logo-vertical.svg'
 import NGC from "../../images/ngc.svg"
-import Blackhawk from "../../images/blackhawk.svg"
+import Blackhawk from "../../images/blackhawk-network-vector-logo.svg"
 import AdvisoryAlpha from "../../images/advisory.svg"
+
+import AdvisoryAlphaText from "../../pages/advisory-alpha-text.js"
+import CollectiveIdeaText from "../../pages/collective-idea-text.js"
+import BlackhawkText from "../../pages/blackhawk-text.js"
+import NGCText from "../../pages/ngc-text.js"
 
 import "../../components/stylesheets/timelines/timeline.css"
 
 const Timeline = () => (
+  
   <div className="timeline-container">
     <div className="timeline-container__date">
       <TimelineDate date="Jan '22 - Present" top="2%" />
@@ -36,6 +42,7 @@ const Timeline = () => (
         top="-20px"
         image={AdvisoryAlpha}
         imageMargin="0px"
+        text={<AdvisoryAlphaText />}
       />
 
       <TimelineBox 
@@ -45,6 +52,7 @@ const Timeline = () => (
         top="25px"
         image={Blackhawk}
         imageMargin="0px"
+        text={<BlackhawkText />}
       />
 
       <TimelineBox 
@@ -54,6 +62,7 @@ const Timeline = () => (
         top="85px"
         image={NGC}
         imageMargin="0px"
+        text={<NGCText />}
       />
 
       <TimelineBox 
@@ -63,6 +72,7 @@ const Timeline = () => (
         top="135px"
         image={CollectiveIdea}
         imageMargin="0px"
+        text={<CollectiveIdeaText />}
       />
     </div>
   </div>

@@ -20,7 +20,7 @@ a {
 .header-container {
   display: flex;
   margin: 0px auto;
-  max-width: 960px;
+  max-width: 1000px;
   padding: 1.45rem 1.0875rem 0;
 }
 

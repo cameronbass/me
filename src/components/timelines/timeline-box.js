@@ -32,7 +32,7 @@ export default function TimelineBox(props) {
           </div>
         </div>
 
-        <Modal onClose={ () => setShow(false) } place={props.name} show={show} />
+        <Modal onClose={ () => setShow(false) } place={props.name} show={show} text={props.text} svg={props.image} />
       </div>
     </div>
   )
