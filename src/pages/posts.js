@@ -16,6 +16,12 @@ const Posts = () => (
       </div>
 
       <PostItem 
+        title="JSONB & PostgreSQL: It's Not So Scary"
+        date='September 27, 2022'
+        url='https://medium.com/@cam_bass/jsonb-postgresql-its-not-so-scary-602692def2fb'
+      />
+
+      <PostItem 
         title='Adjustable Form Text Area with the contenteditable Tag'
         date='June 13, 2017'
         url='https://collectiveidea.com/blog/archives/2017/06/13/adjustable-form-text-area-with-the-contenteditable-tag'
