@@ -4,7 +4,7 @@ import "./stylesheets/post-item.css"
 
 export default function PostItem(props) {
   return (
-    <a href={ props.url } target={'_blank'} className='post-item-container'>
+    <a href={ props.url } target={'_blank'} rel={'noreferrer'} className='post-item-container'>
       <div className='post-item-title'>
         {props.title}
       </div>

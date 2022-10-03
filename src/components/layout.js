@@ -45,10 +45,10 @@ const Layout = ({ children }) => {
             <div className="image-container">
               <Image />
               <div style={{ textAlign: 'center', paddingTop: '20px', display: 'flex', justifyContent: 'space-evenly'}}>
-                <a href onClick={() => window.location = 'mailto:cam@statcasters.com'} target={'_blank'}>
+                <div onClick={() => window.location = 'mailto:cam@statcasters.com'} target={'_blank'} rel="noreferrer">
                   <SVG className="svg" src={Gmail} width={32} height={32}  />
-                </a>
-                <a href="https://twitter.com/cameronmbass?lang=en" target={'_blank'}>
+                </div>
+                <a href="https://twitter.com/cameronmbass?lang=en" target={'_blank'} rel="noreferrer">
                   <SVG 
                     src={Twitter} 
                     className="svg twitter"
@@ -58,6 +58,7 @@ const Layout = ({ children }) => {
                 </a>
                 <a 
                   href="https://www.linkedin.com/in/cameron-michael-bass/" target={'_blank'}
+                  rel="noreferrer"
                   className="twitter-icon"
                 >
                   <SVG className="svg linkedin" src={Linkedin} width={32} height={32}  />
