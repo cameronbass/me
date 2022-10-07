@@ -9,9 +9,9 @@ export default function Posts() {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/getAll")
-      .then(response => response.json())
-      .then(data => setPosts(data))
+    // fetch("http://localhost:3000/api/getAll")
+    //   .then(response => response.json())
+    //   .then(data => setPosts(data))
   })
 
   return (

@@ -18,7 +18,7 @@ const Modal = (props) => {
         <div className='modal-body'>
           <SVG 
             src={props.svg} 
-            className="svg"
+            className={"svg " + props.place}
             style={{width: '100%', marginBottom: '10px'}}
             width={120} 
             height={120}  

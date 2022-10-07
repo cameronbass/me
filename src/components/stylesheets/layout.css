@@ -245,7 +245,12 @@ img {
   fill: #B5342A;
 }
 
-
+.svg.Collective.Idea {
+  width: 37% !important;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex; 
+}
 
 .gatsby-image-wrapper {
   margin-top: 20px;
