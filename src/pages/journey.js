@@ -15,7 +15,7 @@ export default function Journey() {
       </div>
 
       <div className='page-information'>
-        <p className='page-information__text'>My journey in the software industry has allowed me to work for large companies and small consultancies, my experience has provided me with training on various types of applications and platforms. <p className='sub-text'><i>* Click on the boxes for detailed information on my time at each company</i></p></p>
+        <p className='page-information__text'>My journey in the software industry has allowed me to work for large companies and small consultancies. My experience has provided me with training on various types of applications and platforms. <p className='sub-text'><i>* Click on the boxes for detailed information on my time at each company</i></p></p>
       </div>
 
       <Timeline />
