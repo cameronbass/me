@@ -62,7 +62,15 @@ main {
   margin: 8px;
 }
 
+.pagination {
+  display: flex;
+  list-style: none;
+  margin: auto;
+  justify-content: space-between;
+}
+
 .sub-text {
+  display: flex;
   padding-top: 10px;
   font-size: small;
 }

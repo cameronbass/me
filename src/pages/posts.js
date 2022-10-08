@@ -1,19 +1,15 @@
-import React, { useEffect, useState } from 'react'
+// React
+import React from 'react'
+
+// Components
 import Layout from "../components/layout"
+import PaginatedPosts from "../components/paginated-posts"
 
-import PostItem from "../components/post-item"
-
+// Stylesheets
 import "../components/stylesheets/posts.css"
 
+// Posts
 export default function Posts() {
-  const [posts, setPosts] = useState([])
-
-  useEffect(() => {
-    fetch("http://localhost:3000/api/getAll")
-      .then(response => response.json())
-      .then(data => setPosts(data))
-  })
-
   return (
     <Layout>
       <div className="posts-container">
@@ -25,19 +21,10 @@ export default function Posts() {
         </div>
 
         <div className='page-information'>
-          <p className='page-information__text'>We live in the information age, and it's undoubtedly the case that developers blogging about their discoveries has made learning how to build software much easier for me. Writing and posting about my technological findings is how I can give back in a small way.<p className='sub-text'><i>* Search by title or date</i></p></p>
+          <p className='page-information__text'>We live in the information age, and it's undoubtedly the case that developers blogging about their discoveries has made learning how to build software much easier for me. Writing and posting about my technological findings is how I can give back in a small way.<span className='sub-text'><i>* Search by title or date</i></span></p>
         </div>
 
-        <div>
-          {posts.map((post, index) => (
-            <PostItem
-              key={index}
-              title={post.title}
-              date={post.date}
-              url={post.url}
-            />
-          ))}
-        </div>
+        <PaginatedPosts postsPerPage={2} />
       </div>
     </Layout>
   )
