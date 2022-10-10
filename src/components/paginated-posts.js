@@ -15,7 +15,6 @@ export default function PaginatedPosts({ postsPerPage }) {
       .then(response => response.json())
       .then(data => {
         const endOffset = postOffset + postsPerPage;
-        console.log(`Loading items from ${postOffset} to ${endOffset}`);
 
         setPosts(data)
         setCurrentPosts(data.slice(postOffset, endOffset));
@@ -35,9 +34,9 @@ export default function PaginatedPosts({ postsPerPage }) {
       {currentPosts.map((post, index) => (
         <PostItem
           key={index}
-          title={post.title}
-          date={post.date}
-          url={post.url}
+          title={post.item.title}
+          date={post.item.date}
+          url={post.item.url}
         />
       ))}
 
