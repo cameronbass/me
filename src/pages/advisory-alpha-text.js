@@ -2,7 +2,7 @@ import React from "react"
 
 const AdvisoryAlphaText = () => {
   return (
-    <div>
+    <div className="text-body">
       <p>
         Advisory Alpha partners with select financial advisors by providing a comprehensive advisory solution designed to simplify, grow, and maximize the impact of your practice.
       </p>

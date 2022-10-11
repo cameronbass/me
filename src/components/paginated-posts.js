@@ -16,7 +16,7 @@ export default function PaginatedPosts({ postsPerPage }) {
   useEffect(() => {
     const endOffset = postOffset + postsPerPage;
 
-    fetch("http://localhost:3000/api/getAll?search=" + query)
+    fetch("http://localhost:3000/api/posts?search=" + query)
       .then(response => response.json())
       .then(data => {
         setPosts(data)
@@ -28,7 +28,6 @@ export default function PaginatedPosts({ postsPerPage }) {
   const handlePageClick = (event) => {
     const newOffset = (event.selected * postsPerPage) % posts.length;
 
-    console.log(newOffset)
     setPostOffset(newOffset);
   };
 
@@ -45,18 +44,24 @@ export default function PaginatedPosts({ postsPerPage }) {
         />
       ))}
 
-      <ReactPaginate
-        containerClassName='pagination'
-        breakLabel="..."
-        nextLabel="next >"
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={2}
-        pageCount={pageCount}
-        previousLabel="< previous"
-        renderOnZeroPageCount={null}
-      />
+      {(currentPosts.length > 0 && posts.length > 1) &&
+        <ReactPaginate
+          containerClassName='pagination'
+          nextLabel=">"
+          onPageChange={handlePageClick}
+          pageLinkClassName="page-link"
+          nextLinkClassName="page-link-next"
+          previousLinkClassName="page-link-previous"
+          activeClassName="active"
+          pageRangeDisplayed={1}
+          marginPagesDisplayed={1}
+          pageCount={pageCount}
+          previousLabel="<"
+          renderOnZeroPageCount={null}
+        />
+      }
 
-      <EmptySearchResults currentPosts={currentPosts} />
+      <EmptySearchResults posts={currentPosts} />
     </div>
   )
 }

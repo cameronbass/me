@@ -2,7 +2,7 @@ import React from "react"
 
 const CollectiveIdeaText = () => {
   return (
-    <div>
+    <div className="text-body">
       <p>
         Collective Idea takes client ideas and puts them through the strategy, design, and development pipeline. 
       </p>

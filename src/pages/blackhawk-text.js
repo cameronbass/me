@@ -2,7 +2,7 @@ import React from "react"
 
 const BlackHawkText = () => {
   return (
-    <div>
+    <div className="text-body">
       <p>
         Blackhawk Network provides Gift Cards, Prepaid Incentive Cards & More for Employers and Merchants
       </p>

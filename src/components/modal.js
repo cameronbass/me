@@ -23,6 +23,7 @@ const Modal = (props) => {
             width={120} 
             height={120}  
           />
+
           {props.text}
         </div>
       </div>

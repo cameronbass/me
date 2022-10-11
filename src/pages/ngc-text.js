@@ -2,7 +2,7 @@ import React from "react"
 
 const NGCText = () => {
   return (
-    <div>
+    <div className="text-body">
       <p>
         NGC is revolutionizing the world of gift cards and branded currency.
       </p>
