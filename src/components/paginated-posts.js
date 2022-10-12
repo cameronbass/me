@@ -16,7 +16,7 @@ export default function PaginatedPosts({ postsPerPage }) {
   useEffect(() => {
     const endOffset = postOffset + postsPerPage;
 
-    fetch("http://localhost:3000/api/posts?search=" + query)
+    fetch("http://ec2-3-83-11-88.compute-1.amazonaws.com:3000/api/posts?search=" + query)
       .then(response => response.json())
       .then(data => {
         setPosts(data)

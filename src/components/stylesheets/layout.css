@@ -166,6 +166,9 @@ legend {
 textarea {
   overflow: auto;
 }
+p {
+  font-size: 18px;
+}
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
