@@ -16,7 +16,7 @@ export default function PaginatedPosts({ postsPerPage }) {
   useEffect(() => {
     const endOffset = postOffset + postsPerPage;
 
-    fetch("https://cambass-server.com/api/posts?search=" + query)
+    fetch(process.env.SERVER_URI + query)
       .then(response => response.json())
       .then(data => {
         setPosts(data)
