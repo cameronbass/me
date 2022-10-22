@@ -14,9 +14,11 @@ export default function PaginatedPosts({ postsPerPage }) {
   const [postOffset, setPostOffset] = useState(0);
 
   useEffect(() => {
+    console.log(process.env.NODE_ENV)
+    console.log(process.env.GATSBY_SERVER_URI)
     const endOffset = postOffset + postsPerPage;
 
-    fetch(process.env.SERVER_URI + query)
+    fetch(process.env.GATSBY_SERVER_URI + query)
       .then(response => response.json())
       .then(data => {
         setPosts(data)
