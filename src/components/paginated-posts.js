@@ -3,11 +3,13 @@ import ReactPaginate from 'react-paginate';
 
 // components
 import PostItem from "../components/post-item"
-import SearchInput from "../components/search-input"
+import TextSearchInput from "../components/text-search-input"
+import MultiSelectSearchInput from "../components/multi-select-search-input"
 import EmptySearchResults from "../components/empty-search-results"
 
 export default function PaginatedPosts({ postsPerPage }) {
-  const [query, setQuery] = useState("")
+  const [searchQuery, setSearchQuery] = useState("")
+  const [currentCategories, setCategoryQuery] = useState([])
   const [posts, setPosts] = useState([])
   const [currentPosts, setCurrentPosts] = useState([])
   const [pageCount, setPageCount] = useState(0);
@@ -18,14 +20,18 @@ export default function PaginatedPosts({ postsPerPage }) {
     console.log(process.env.GATSBY_SERVER_URI)
     const endOffset = postOffset + postsPerPage;
 
-    fetch(process.env.GATSBY_SERVER_URI + query)
+    console.log(currentCategories)
+
+    const categories = encodeURIComponent(JSON.stringify(currentCategories))
+
+    fetch(process.env.GATSBY_SERVER_URI + searchQuery + `&categories=${categories}`)
       .then(response => response.json())
       .then(data => {
         setPosts(data)
         setCurrentPosts(data.slice(postOffset, endOffset));
         setPageCount(Math.ceil(data.length / postsPerPage));
       })
-  }, [postOffset, postsPerPage, query])
+  }, [postOffset, postsPerPage, searchQuery, currentCategories])
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * postsPerPage) % posts.length;
@@ -35,13 +41,18 @@ export default function PaginatedPosts({ postsPerPage }) {
 
   return (
     <div>
-      <SearchInput setQuery={setQuery} />
+      <TextSearchInput setQuery={setSearchQuery} />
+      <MultiSelectSearchInput 
+        currentCategories={currentCategories} 
+        categoryQuery={setCategoryQuery}
+      />
 
       {currentPosts.map((post, index) => (
         <PostItem
           key={index}
           title={post.title || post.item.title}
           date={post.date || post.item.date}
+          categories={post.categories || post.item.categories}
           url={post.url || post.item.url}
         />
       ))}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SearchInput(props) {
+export default function TextSearchInput(props) {
   const { setQuery } = props
 
   function handleChange(event) {

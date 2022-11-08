@@ -1,0 +1,12 @@
+.multi-select {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.multi-select-input {
+  width: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+}
