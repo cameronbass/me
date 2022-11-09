@@ -4,17 +4,14 @@ import ReactPaginate from 'react-paginate';
 // Components
 import PostItem from "../components/post-item"
 import TextSearchInput from "../components/text-search-input"
-import MultiSelectSearchInput from "../components/multi-select-search-input"
 import EmptySearchResults from "../components/empty-search-results"
-
-// StyleSheets
-import "../../src/components/stylesheets/inputs/multi-select.css"
-
-// Images
-import Arrow from "../../src/images/arrow.svg"
+import CategoryFilter from "../components/category-filter"
 
 // Plugins
 import ClickAwayListener from '@mui/base/ClickAwayListener';
+
+// StyleSheets
+import "../../src/components/stylesheets/inputs/multi-select.css"
 
 export default function PaginatedPosts({ postsPerPage }) {
   const [searchQuery, setSearchQuery] = useState("")
@@ -26,12 +23,7 @@ export default function PaginatedPosts({ postsPerPage }) {
   const [postOffset, setPostOffset] = useState(0);
 
   useEffect(() => {
-    console.log(process.env.NODE_ENV)
-    console.log(process.env.GATSBY_SERVER_URI)
     const endOffset = postOffset + postsPerPage;
-
-    console.log(currentCategories)
-
     const categories = encodeURIComponent(JSON.stringify(currentCategories))
 
     fetch(process.env.GATSBY_SERVER_URI + searchQuery + `&categories=${categories}`)
@@ -50,40 +42,21 @@ export default function PaginatedPosts({ postsPerPage }) {
   };
 
   const handleClickAway = () => {
-    if (multiSelectExpanded) {
-      setMultiSelectExpanded(false)
-    }
+    setMultiSelectExpanded(false)
   }
 
   return (
     <div>
       <TextSearchInput setQuery={setSearchQuery} />
+
       <ClickAwayListener onClickAway={handleClickAway}>
         <div>
-          <div className='category-filter'>
-            <div 
-              className='category-filter-dropdown' 
-              onClick={() => setMultiSelectExpanded(!multiSelectExpanded)}
-              style={{
-                backgroundColor: multiSelectExpanded ? `#fff` : ``,
-              }}
-            >
-              <span className='category-filter-title' >Category Filter</span>
-              <img
-                src={Arrow}
-                style={{
-                  transform: multiSelectExpanded ? `rotate(180deg)` : `rotate(0deg)`,
-                  transitionDuration: `150ms`,
-                }}
-              />
-            </div>
-          </div>
-          {multiSelectExpanded && (
-            <MultiSelectSearchInput 
-              currentCategories={currentCategories} 
-              categoryQuery={setCategoryQuery}
-            />
-          )}
+          <CategoryFilter 
+            multiSelectExpanded={multiSelectExpanded}
+            setMultiSelectExpanded={setMultiSelectExpanded}
+            currentCategories={currentCategories} 
+            setCategoryQuery={setCategoryQuery}
+          />
         </div>
       </ClickAwayListener>
 

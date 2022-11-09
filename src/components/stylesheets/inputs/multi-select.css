@@ -14,9 +14,10 @@
   display: flex;
   background: #f4f4f4;
   padding: 8px;
-  padding-left: 18px;
+  padding-left: 16px;
   border-radius: 15px;
   cursor: pointer;
+  width: 30%;
   box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
 }
 
