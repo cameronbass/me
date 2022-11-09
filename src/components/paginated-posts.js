@@ -50,7 +50,7 @@ export default function PaginatedPosts({ postsPerPage }) {
       <TextSearchInput setQuery={setSearchQuery} />
 
       <ClickAwayListener onClickAway={handleClickAway}>
-        <div>
+        <div className='category-filter-container'>
           <CategoryFilter 
             multiSelectExpanded={multiSelectExpanded}
             setMultiSelectExpanded={setMultiSelectExpanded}
