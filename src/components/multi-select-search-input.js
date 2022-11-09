@@ -20,6 +20,10 @@ export default function MultiSelectSearchInput(props) {
     }
   }
 
+  function checkedInput(value) {
+    return currentCategories.includes(value)
+  }
+
   return (
     <div className='category-container'>
       <div className='category-container-header'>
@@ -32,6 +36,7 @@ export default function MultiSelectSearchInput(props) {
             key={index} 
             type="checkbox" 
             name="category" 
+            checked={checkedInput(category.value)}
             value={category.value}
             className="multi-select-input"
             onChange={handleChange} />
