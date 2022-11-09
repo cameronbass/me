@@ -12,6 +12,15 @@
   cursor: pointer;
 }
 
+.post-item-descriptive-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-item-category-content {
+  margin-bottom: 0px;
+}
+
 .post-item-container:hover {
   box-shadow: rgba(136, 165, 191, 0.20) 10px 4px 16px 0px, rgba(255, 255, 255, 0.2) -10px -3px 16px 0px;
 }

@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@mui/base": "^5.0.0-alpha.105",
     "dotenv": "^16.0.3",
     "gatsby": "^4.22.0",
     "gatsby-image": "^3.11.0",

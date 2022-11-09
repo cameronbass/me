@@ -1,15 +1,25 @@
 import React, { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate';
 
-// components
+// Components
 import PostItem from "../components/post-item"
 import TextSearchInput from "../components/text-search-input"
 import MultiSelectSearchInput from "../components/multi-select-search-input"
 import EmptySearchResults from "../components/empty-search-results"
 
+// StyleSheets
+import "../../src/components/stylesheets/inputs/multi-select.css"
+
+// Images
+import Arrow from "../../src/images/arrow.svg"
+
+// Plugins
+import ClickAwayListener from '@mui/base/ClickAwayListener';
+
 export default function PaginatedPosts({ postsPerPage }) {
   const [searchQuery, setSearchQuery] = useState("")
   const [currentCategories, setCategoryQuery] = useState([])
+  const [multiSelectExpanded, setMultiSelectExpanded] = useState(false);
   const [posts, setPosts] = useState([])
   const [currentPosts, setCurrentPosts] = useState([])
   const [pageCount, setPageCount] = useState(0);
@@ -39,13 +49,43 @@ export default function PaginatedPosts({ postsPerPage }) {
     setPostOffset(newOffset);
   };
 
+  const handleClickAway = () => {
+    if (multiSelectExpanded) {
+      setMultiSelectExpanded(false)
+    }
+  }
+
   return (
     <div>
       <TextSearchInput setQuery={setSearchQuery} />
-      <MultiSelectSearchInput 
-        currentCategories={currentCategories} 
-        categoryQuery={setCategoryQuery}
-      />
+      <ClickAwayListener onClickAway={handleClickAway}>
+        <div>
+          <div className='category-filter'>
+            <div 
+              className='category-filter-dropdown' 
+              onClick={() => setMultiSelectExpanded(!multiSelectExpanded)}
+              style={{
+                backgroundColor: multiSelectExpanded ? `#fff` : ``,
+              }}
+            >
+              <span className='category-filter-title' >Category Filter</span>
+              <img
+                src={Arrow}
+                style={{
+                  transform: multiSelectExpanded ? `rotate(180deg)` : `rotate(0deg)`,
+                  transitionDuration: `150ms`,
+                }}
+              />
+            </div>
+          </div>
+          {multiSelectExpanded && (
+            <MultiSelectSearchInput 
+              currentCategories={currentCategories} 
+              categoryQuery={setCategoryQuery}
+            />
+          )}
+        </div>
+      </ClickAwayListener>
 
       {currentPosts.map((post, index) => (
         <PostItem

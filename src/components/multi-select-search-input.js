@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
-import "../../src/components/stylesheets/inputs/multi-select.css"
 
 export default function MultiSelectSearchInput(props) {
   const { currentCategories, categoryQuery } = props
 
   const [categories, setCategories] = useState([
-    { label: "sports", value: "Post Name" },
-    { label: "philosophy", value: "Fake Name" },
-    { label: "technology", value: "Fake Name" },
-    { label: "culture", value: "Fake Name" },
+    { label: "Sports", value: "sports" },
+    { label: "Philosophy", value: "philosophy" },
+    { label: "Technology", value: "technology" },
+    { label: "Culture", value: "culture" },
   ])
 
   function handleChange(event) {
@@ -22,7 +21,10 @@ export default function MultiSelectSearchInput(props) {
   }
 
   return (
-    <div>
+    <div className='category-container'>
+      <div className='category-container-header'>
+        Filter By Category
+      </div>
       {categories.map((category, index) => (
         <div key={index} className='multi-select'>
           <label>{category.label}</label>
@@ -30,7 +32,7 @@ export default function MultiSelectSearchInput(props) {
             key={index} 
             type="checkbox" 
             name="category" 
-            value={category.label}
+            value={category.value}
             className="multi-select-input"
             onChange={handleChange} />
         </div>
