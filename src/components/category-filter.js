@@ -1,11 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 // Components
-import MultiSelectSearchInput from "./category-input-container"
+import CategoryFilterDrowdown from "./category-filter-dropdown"
 import CategoryFilterButton from "../components/category-filter-button"
 
 export default function CategoryFilter(props) {
-  const { multiSelectExpanded, setMultiSelectExpanded, currentCategories, setCategoryQuery } = props
+  const { 
+    multiSelectExpanded, 
+    setMultiSelectExpanded, 
+    currentCategories, 
+    setCategoryQuery 
+  } = props
 
   return (
     <>
@@ -15,7 +20,7 @@ export default function CategoryFilter(props) {
       />
 
       {multiSelectExpanded && (
-        <MultiSelectSearchInput 
+        <CategoryFilterDrowdown
           currentCategories={currentCategories} 
           categoryQuery={setCategoryQuery}
         />

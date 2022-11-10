@@ -25,7 +25,6 @@ export default function CategoryInputContainer(props) {
           currentCategories={currentCategories}
           categoryQuery={categoryQuery}
           category={category}
-          index={index}
         />
       ))}
     </div>
