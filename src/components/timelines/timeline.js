@@ -9,10 +9,10 @@ import NGC from "../../images/ngc.svg"
 import Blackhawk from "../../images/blackhawk-network-vector-logo.svg"
 import AdvisoryAlpha from "../../images/advisory.svg"
 
-import AdvisoryAlphaText from "../../pages/advisory-alpha-text.js"
-import CollectiveIdeaText from "../../pages/collective-idea-text.js"
-import BlackhawkText from "../../pages/blackhawk-text.js"
-import NGCText from "../../pages/ngc-text.js"
+import AdvisoryAlphaText from "../../pages/templates/advisory-alpha-text.js"
+import CollectiveIdeaText from "../../pages/templates/collective-idea-text.js"
+import BlackhawkText from "../../pages/templates/blackhawk-text.js"
+import NGCText from "../../pages/templates/ngc-text.js"
 
 import "../../components/stylesheets/timelines/timeline.css"
 

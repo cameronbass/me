@@ -2,7 +2,7 @@ import React from 'react'
 
 // Components
 import CategoryFilterDrowdown from "./category-filter-dropdown"
-import CategoryFilterButton from "../components/category-filter-button"
+import CategoryFilterButton from "./category-filter-button"
 
 export default function CategoryFilter(props) {
   const { 

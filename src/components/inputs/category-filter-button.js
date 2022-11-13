@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Images
-import Arrow from "../../src/images/arrow.svg"
+import Arrow from "../../images/arrow.svg"
 
 export default function CategoryFilterButton(props) {
   const { multiSelectExpanded, setMultiSelectExpanded } = props

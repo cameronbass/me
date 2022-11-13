@@ -3,9 +3,9 @@ import ReactPaginate from 'react-paginate';
 
 // Components
 import PostItem from "../components/post-item"
-import TextSearchInput from "../components/text-search-input"
 import EmptySearchResults from "../components/empty-search-results"
-import CategoryFilter from "../components/category-filter"
+import TextSearchInput from "../components/inputs/text-search-input"
+import CategoryFilter from "../components/inputs/category-filter"
 
 // Plugins
 import ClickAwayListener from '@mui/base/ClickAwayListener';
