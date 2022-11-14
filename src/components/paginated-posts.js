@@ -26,7 +26,7 @@ export default function PaginatedPosts({ postsPerPage }) {
     const endOffset = postOffset + postsPerPage;
     const categories = encodeURIComponent(JSON.stringify(currentCategories))
 
-    fetch(process.env.GATSBY_SERVER_URI + searchQuery + `&categories=${categories}`)
+    fetch(process.env.GATSBY_SERVER_URI + `api/posts?search=` + searchQuery + `&categories=${categories}`)
       .then(response => response.json())
       .then(data => {
         setPosts(data)
